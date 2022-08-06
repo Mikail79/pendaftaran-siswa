@@ -4,6 +4,7 @@
 <html>
 <head>
     <title>Pendaftaran Siswa Baru | SMK Coding</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
 
     <br>
 
-    <table border="1">
+    <table>
     <thead>
         <tr>
             <th>No</th>
@@ -58,6 +59,8 @@
     </table>
 
     <p>Total: <?php echo mysqli_num_rows($query) ?></p>
+
+    <a href="index.php">kembali ke home</a>
 
     </body>
 </html>

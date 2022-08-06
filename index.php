@@ -18,5 +18,17 @@
         </ul>
     </nav>
 
+    <?php if(isset($_GET['status'])): ?>
+    <p>
+        <?php
+            if($_GET['status'] == 'sukses'){
+               echo "<script type='text/javascript'>alert('Daftar Berhasil');</script>";
+            } else {
+                echo "Pendaftaran gagal!";
+            }
+        ?>
+    </p>
+    <?php endif; ?>
+
     </body>
 </html>
